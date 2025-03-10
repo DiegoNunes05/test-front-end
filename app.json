@@ -1,0 +1,50 @@
+{
+   "expo": {
+     "name": "Billor-Driver-app",
+     "slug": "Billor-Driver-app",
+     "version": "1.0.0",
+     "orientation": "portrait",
+     "icon": "./assets/icon.png",
+     "userInterfaceStyle": "light",
+     "newArchEnabled": true,
+     "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "svgx"],
+      "transformer": "node_modules/react-native-svg-transformer/index.js"
+    },
+     "config": {
+       "networkUrls": [
+         "https://res.cloudinary.com"
+       ]
+     },
+     "splash": {
+       "image": "./assets/splash-icon.png",
+       "resizeMode": "contain",
+       "backgroundColor": "#ffffff"
+     },
+     "ios": {
+       "supportsTablet": true
+     },
+     "android": {
+       "adaptiveIcon": {
+         "foregroundImage": "./assets/adaptive-icon.png",
+         "backgroundColor": "#ffffff"
+       }
+     },
+     "web": {
+       "favicon": "./assets/favicon.png"
+     },
+     "plugins": [
+       ["expo-router", {
+         "root": "./app"
+       }],
+       [
+         "@react-native-async-storage/async-storage/expo-plugin",
+         {
+           "modes": ["persistent"]
+         }
+       ]
+     ],
+     "scheme": "billor-driver-app"
+   }
+}

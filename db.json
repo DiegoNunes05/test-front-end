@@ -1,0 +1,273 @@
+{
+  "loads": [
+    {
+      "id": "1",
+      "origin": "São Paulo, SP",
+      "destination": "Rio de Janeiro, RJ",
+      "address": "Av. Brasil, 1500",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "zipCode": "20940-070",
+      "status": "in_progress",
+      "pickupDate": "2023-06-15T10:00:00",
+      "deliveryDate": "2023-06-16T14:00:00",
+      "weight": 350,
+      "items": 4,
+      "description": "Móveis e eletrodomésticos",
+      "clientName": "Empresa ABC",
+      "clientPhone": "+55 (21) 999427160",
+      "paymentValue": 850.5,
+      "paymentStatus": "pending",
+      "distance": 435,
+      "documents": []
+    },
+    {
+      "id": "2",
+      "origin": "Belo Horizonte, MG",
+      "destination": "Brasília, DF",
+      "address": "SIA Trecho 3, Lote 625",
+      "city": "Brasília",
+      "state": "DF",
+      "zipCode": "71200-030",
+      "status": "pending",
+      "pickupDate": "2023-06-14T08:30:00",
+      "deliveryDate": "2023-06-15T16:00:00",
+      "weight": 520,
+      "items": 7,
+      "description": "Material de construção",
+      "clientName": "Construtora XYZ",
+      "clientPhone": "(61) 97654-3210",
+      "paymentValue": 1200,
+      "paymentStatus": "pending",
+      "distance": 716,
+      "documents": []
+    },
+    {
+      "id": "3",
+      "origin": "Curitiba, PR",
+      "destination": "Porto Alegre, RS",
+      "address": "Av. Farrapos, 3270",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "zipCode": "90220-002",
+      "status": "completed",
+      "pickupDate": "2023-06-10T09:15:00",
+      "deliveryDate": "2023-06-11T12:30:00",
+      "weight": 280,
+      "items": 3,
+      "description": "Produtos alimentícios",
+      "clientName": "Distribuidora Alimentos Sul",
+      "clientPhone": "(51) 98877-6655",
+      "paymentValue": 680,
+      "paymentStatus": "pending",
+      "distance": 546,
+      "documents": []
+    },
+    {
+      "id": "4",
+      "origin": "Salvador, BA",
+      "destination": "Recife, PE",
+      "address": "Av. Caxangá, 800",
+      "city": "Recife",
+      "state": "PE",
+      "zipCode": "50040-000",
+      "status": "in_progress",
+      "pickupDate": "2023-06-17T11:00:00",
+      "deliveryDate": "2023-06-18T14:00:00",
+      "weight": 420,
+      "items": 5,
+      "description": "Equipamentos eletrônicos",
+      "clientName": "Tech Solutions",
+      "clientPhone": "(81) 96655-4433",
+      "paymentValue": 1100,
+      "paymentStatus": "pending",
+      "distance": 839,
+      "documents": []
+    },
+    {
+      "id": "5",
+      "origin": "Fortaleza, CE",
+      "destination": "Natal, RN",
+      "address": "Av. Senador Salgado Filho, 2233",
+      "city": "Natal",
+      "state": "RN",
+      "zipCode": "59064-000",
+      "status": "pending",
+      "pickupDate": "2023-06-15T07:45:00",
+      "deliveryDate": "2023-06-16T10:00:00",
+      "weight": 190,
+      "items": 2,
+      "description": "Material têxtil",
+      "clientName": "Fabril Nordeste",
+      "clientPhone": "(84) 95544-3322",
+      "paymentValue": 560,
+      "paymentStatus": "pending",
+      "distance": 537,
+      "documents": []
+    }
+  ],
+  "drivers": [
+    {
+      "id": "1",
+      "name": "João Silva",
+      "email": "joao.silva@example.com",
+      "phone": "(11) 98765-4321",
+      "license": "12345678901",
+      "licenseExpiry": "2025-05-15",
+      "vehicle": "Caminhão - Mercedez-Benz 1620",
+      "plate": "ABC1234",
+      "status": "active",
+      "photoUrl": "https://exemplo.com/caminho/para/foto.jpg"
+    }
+  ],
+  "documents": [
+    {
+      "id": "1",
+      "loadId": "1",
+      "type": "pickup_receipt",
+      "imageUrl": "https://example.com/documents/pickup_1.jpg",
+      "uploadDate": "2023-06-15T10:15:00",
+      "status": "approved"
+    },
+    {
+      "id": "2",
+      "loadId": "3",
+      "type": "delivery_receipt",
+      "imageUrl": "https://example.com/documents/delivery_3.jpg",
+      "uploadDate": "2023-06-11T12:45:00",
+      "status": "approved"
+    },
+    {
+      "id": "c2c2",
+      "loadId": "2",
+      "type": "delivery_receipt",
+      "name": "Comprovante_2",
+      "imageUrl": "file:///var/mobile/Containers/Data/Application/7D267B26-8C15-4ADE-8FDA-3C1288E37FF2/Library/Caches/ExponentExperienceData/@nunes_05/Billor-Driver-app/ImagePicker/7671CB98-6387-481B-8DF7-F9C7F2EDAF23.jpg",
+      "uploadDate": "2025-03-10T18:41:13.818Z",
+      "status": "pending"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "conversationId": "support-1",
+      "senderId": "1",
+      "receiverId": "support",
+      "text": "Olá, estou com dificuldade para encontrar o endereço de entrega.",
+      "timestamp": "2023-06-15T14:30:00",
+      "read": false,
+      "userName": "João Silva"
+    },
+    {
+      "id": "2",
+      "conversationId": "support-1",
+      "senderId": "support",
+      "receiverId": "1",
+      "text": "Bom dia João! Qual carga você está entregando? Posso te ajudar com o endereço correto.",
+      "timestamp": "2023-06-15T14:35:00",
+      "read": true,
+      "userName": "Suporte Técnico"
+    },
+    {
+      "id": "3",
+      "conversationId": "support-1",
+      "senderId": "1",
+      "receiverId": "support",
+      "text": "Estou entregando a carga #4 em Recife, mas o endereço parece incompleto.",
+      "timestamp": "2023-06-15T14:40:00",
+      "read": false,
+      "userName": "João Silva"
+    },
+    {
+      "id": "4",
+      "conversationId": "support-1",
+      "senderId": "support",
+      "receiverId": "1",
+      "text": "Entendi. O complemento é próximo ao Shopping Recife, na entrada principal. Vou atualizar as informações da carga.",
+      "timestamp": "2023-06-15T14:45:00",
+      "read": true,
+      "userName": "Suporte Técnico"
+    },
+    {
+      "id": "5",
+      "conversationId": "support-1",
+      "senderId": "support",
+      "receiverId": "1",
+      "text": "As informações foram atualizadas. Pode confirmar se consegue localizar agora?",
+      "timestamp": "2023-06-15T14:47:00",
+      "read": true,
+      "userName": "Suporte Técnico"
+    },
+    {
+      "id": "1741557783255",
+      "timestamp": "2025-03-09T22:03:03.255Z",
+      "senderId": "HbOwH0rOuNNNaP93DK1hVOhSb7u1",
+      "receiverId": "support",
+      "text": "ola",
+      "read": false,
+      "userName": "Diego Nunes"
+    },
+    {
+      "id": "1741558991249",
+      "timestamp": "2025-03-09T22:23:11.249Z",
+      "senderId": "HbOwH0rOuNNNaP93DK1hVOhSb7u1",
+      "receiverId": "support",
+      "text": "Agora nao",
+      "read": false,
+      "userName": "Diego Nunes",
+      "conversationId": "support-1"
+    },
+    {
+      "id": "1741560416489",
+      "timestamp": "2025-03-09T22:46:56.489Z",
+      "senderId": "HbOwH0rOuNNNaP93DK1hVOhSb7u1",
+      "receiverId": "support",
+      "text": "Consegui",
+      "read": false,
+      "userName": "Diego Nunes",
+      "conversationId": "support-1"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "1",
+      "title": "Nova carga disponível",
+      "body": "Você tem uma nova carga de São Paulo para Rio de Janeiro.",
+      "type": "new_load",
+      "loadId": "1",
+      "timestamp": "2023-06-14T09:00:00",
+      "read": true
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "title": "Pagamento confirmado",
+      "body": "O pagamento da carga #3 foi confirmado.",
+      "type": "payment",
+      "loadId": "3",
+      "timestamp": "2023-06-11T15:20:00",
+      "read": true
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "title": "Pagamento confirmado",
+      "body": "O pagamento da carga #4 foi confirmado.",
+      "type": "payment",
+      "loadId": "4",
+      "timestamp": "2023-06-11T15:20:00",
+      "read": true
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "title": "Pagamento confirmado",
+      "body": "O pagamento da carga #5 foi confirmado.",
+      "type": "payment",
+      "loadId": "5",
+      "timestamp": "2023-06-11T15:20:00",
+      "read": true
+    }
+  ]
+}

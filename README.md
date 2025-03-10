@@ -1,65 +1,115 @@
-![Alt Text](https://billor.us/images/logo.svg)
+# Billor Driver App 📱
 
-# Billor Coding Challenge: Driver Mobile App
+## Sobre o Projeto
+Aplicativo móvel para motoristas de transporte de cargas, desenvolvido com React Native e Expo.
 
-## Objective
+## 🚀 Tecnologias Utilizadas
+- React Native
+- Expo
+- TypeScript
+- Firebase Authentication
+- Firestore
+- React Navigation
 
-Develop a mobile application using React Native that functions as driver app. The app should enable user authentication, display and manage loads, capture and send document images, facilitate real-time chat communication, and provide push notifications, while also allowing users to manage their profile.
+## 🔧 Instalação
 
-## Functional Requirements
+### Pré-requisitos
+- Node.js (versão 16 ou superior)
+- npm ou Yarn
+- Expo CLI
 
-1. **User Authentication:**
-   - Implement a login screen with form validation.
-   - Integrate with an authentication API (e.g., Firebase Auth or a custom API).
+### Passos de Instalação
 
-2. **Loads Management:**
-   - Display a list of loads with filtering and search capabilities.
-   - Provide a detailed view for each load, including additional information, map and relevant actions.
+1. Clone o repositório
+```bash
+git clone https://github.seu-usuario/billor-driver-app.git
+```
 
-3. **Documents Integration:**
-   - Use the device camera to capture and submit document images associated with loads.
+2. Instale as dependências
+```bash
+cd billor-driver-app
+npm install # ou yarn install
+```
 
-4. **Real-Time Chat:**
-   - Develop a real-time messaging system for communication between support agents and users.
-   - Maintain a conversation history for ongoing chats.
+3. Configure as variáveis de ambiente
 
-5. **Push Notifications:**
-   - Integrate push notifications (e.g., via Firebase Cloud Messaging) to alert users about important updates.
-   - Handle notifications appropriately when the app is active, in the background, or closed.
+#### Configurando a URL da API Local Para Desenvolvimento com JSON Server
 
-6. **User Profile Management:**
-   - Provide a profile screen where users can update personal information and app settings.
+Descubra o IP da sua máquina local:
+- Windows: Abra o Prompt de Comando e digite `ipconfig`
+- Mac/Linux: Abra o Terminal e digite `ifconfig` ou `ip addr`
+- Localize o endereço IP da sua rede local (geralmente começa com 192.168.x.x)
+- Adicione ao seu .env:
+```
+API_URL=http://SEU_IP_LOCAL:3000  json-server --watch db.json --port 3000 para rodar o db.json
+```
 
-## Technical Requirements
+#### Exemplo Completo de .env
+```
+EXPO_PUBLIC_FIREBASE_API_KEY=AIzaSyAbc123DefG456HijK789LmnO
+EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=seu-projeto.firebaseapp.com
+EXPO_PUBLIC_FIREBASE_PROJECT_ID=seu-projeto
+EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=seu-projeto.appspot.com
+EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
+EXPO_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abc123def456ghi
+API_URL=http://192.168.1.2:3000
+```
 
-- **Technologies:**
-  - **React Native** with React Navigation for routing.
-  - State management using Context API or Redux.
-  - Integration with native device capabilities (camera, push notifications).
-  - External APIs for authentication, chat, and notifications.
+#### Notas Importantes
+- Nunca compartilhe seu arquivo .env publicamente
+- Adicione .env ao seu .gitignore
+- Para projetos em equipe, crie um .env.example com a estrutura, mas sem valores reais
 
-- **Best Practices:**
-  - Write clean, modularized, and reusable code.
-  - Ensure responsiveness and compatibility across iOS and Android platforms.
-  - Handle asynchronous operations, loading states, and error management gracefully.
-  - (Optional) Include unit tests for critical functionalities.
+4. Inicie o projeto
+```bash
+npx expo start
+```
 
-- **Data:**
-  - Simulate or integrate with APIs for load management, chat, and authentication.
-  - Use mocks or public APIs where appropriate.
+## 📂 Estrutura do Projeto
+```
+billor-driver-app/
+│ 
+├── app/               # Páginas e rotas
+│   ├── (auth)/        # Rotas autenticadas
+│   └── (public)/      # Rotas públicas
+│ 
+├── components/        # Componentes reutilizáveis
+│   ├── Header.tsx
+│   ├── ChatButton.tsx
+│   └── ...
+│ 
+├── contexts/          # Gerenciamento de estado global
+│   ├── AuthContext.tsx
+│   ├── ChatContext.tsx
+│   └── ...
+│ 
+├── hooks/             # Hooks personalizados
+│   └── useAuth.ts
+│ 
+├── services/          # Serviços de API
+│   ├── api.ts
+│   └── authService.ts
+│ 
+├── types/             # Definições de tipos
+│   └── types.ts
+│ 
+└── utils/             # Utilitários
+    └── firebaseErrorMessage.ts
+```
 
-## Evaluation Criteria
+## 🤝 Contribuição
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Faça um Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-- **Functionality:** Does the app meet the functional requirements (authentication, loads management, camera integration, chat, notifications, profile management)?
-- **Code Quality:** Is the project well-organized and does the code adhere to best practices?
-- **Use of Technologies:** Does the candidate demonstrate proficiency in React Native, state management, and native device integration?
-- **User Experience:** Is the application intuitive, responsive, and user-friendly?
-- **Problem-Solving:** How effectively are asynchronous operations, error management, and cross-platform compatibility handled?
+## 📄 Licença
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
-## Submission
+## 📞 Contato
+Seu Nome - seu-email@exemplo.com
 
-- Host your source code on a public repository (e.g., GitHub).
-- Provide clear instructions on how to run the project.
-- (Optional) Include documentation explaining your technical decisions.
+Link do Projeto: [https://github.com/DiegoNunes05/billor-driver-app](https://github.com/DiegoNunes05/Billor-driver-app)
 
-Good luck!
+Desenvolvido com por [Diego Nunes](https://github.com/DiegoNunes05)
