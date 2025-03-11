@@ -9,7 +9,7 @@ Aplicativo móvel para motoristas de transporte de cargas, desenvolvido com Reac
 - TypeScript
 - Firebase Authentication
 - Firestore
-- React Navigation
+- Expo Router
 
 ## 🔧 Instalação
 
