@@ -108,7 +108,7 @@ billor-driver-app/
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## 📞 Contato
-Seu Nome - seu-email@exemplo.com
+Diego Nunes - diegonunesabc@gmail.com
 
 Link do Projeto: [https://github.com/DiegoNunes05/billor-driver-app](https://github.com/DiegoNunes05/Billor-driver-app)
 
